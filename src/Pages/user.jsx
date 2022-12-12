@@ -24,6 +24,7 @@ export const User = ()=>{
       })
         
         .then((r)=>{
+          console.log(r)
           localStorage.setItem('token',r.token)
           navigate("/notice")
         })
